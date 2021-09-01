@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Custom Styles */
+html {
+    height: 100%;
+}
+
+body {
+    /* backdrop-filter: blur(1px); */
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Clock */
+#clock {
+    font-size: 10em;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Login and Greeting */
+#greeting {
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+}
+
+#login-form {
+    text-align: center;
+}
+
+#login-form input {
+    line-height: 29px;
+    width: 325px;
+    border-radius: 10px;
+    border: 0;
+    padding: 8px;
+    font-size: 15px;
+}
+
+/* Todo */
+#todo-form {
+    text-align: center;
+    /* margin-top: 200px; */
+    opacity: 0.5;
+}
+
+#todo-form input {
+    line-height: 29px;
+    width: 325px;
+    border-radius: 10px;
+    border: 0;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#todo-ul {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 35px;
+}
+
+#todo-ul a {
+    margin-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* quote */
+#quote-container {
+    color: white;
+    margin-left: 15px;
+    line-height: 30px;
+    position: absolute;
+    left: 1px;
+    bottom: 10px;
+    opacity: 0.8;
+    max-width: 400px;
+}
+
+#quote-text {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 2em;
+}
+
+#quote-author {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 3px;
+}
+
+/* weather */
+#weather-container {
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    opacity: 0.8;
+}
+
+/* bookmark dock */
+#bookmark-container {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 15px 0 15px 25px;
+    width: 280px;
+    margin: auto;
+    opacity: 0;
+    background-color: white;
+    border-radius: 10px;
+    transition: opacity 0.5s;
+}
+
+#bookmark-dock a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: bold;
+    line-height: 30px;
+    width: 100%;
+}
