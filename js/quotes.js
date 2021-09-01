@@ -7,6 +7,6 @@ function showQuotes(quotes) {
     quoteAuthorElem.innerText = quotes[QuoteRandint].author;
 }
 
-fetch("https://raw.githubusercontent.com/eungangku/VanilaJS/main/js/quotes.json").then(response => response.json()).then(data => {
+fetch("https://raw.githubusercontent.com/eungangku/WavyTodo/main/js/quotes.json").then(response => response.json()).then(data => {
     showQuotes(data);
 });
